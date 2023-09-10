@@ -35,7 +35,7 @@
   <link rel="stylesheet" href="plugins/colorbox/colorbox.css">
   <!-- Template styles-->
   <link rel="stylesheet" href="css/style.css">
-  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -368,8 +368,7 @@
     <!-- shuffle -->
     <script src="plugins/shuffle/shuffle.min.js" defer></script>
     <script>
-      window.addEventListener('load', AOS.refresh)
-      $(function () {
+      window.addEventListener('load', () => {
         AOS.init();
       });
     </script>

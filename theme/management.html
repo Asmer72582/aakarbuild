@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="plugins/colorbox/colorbox.css">
     <!-- Template styles-->
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -285,7 +285,9 @@
   ================================================== -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        window.addEventListener('load', () => {
+            AOS.init();
+        });
     </script>
     <!-- initialize jQuery Library -->
     <script src="plugins/jQuery/jquery.min.js"></script>

@@ -357,10 +357,12 @@
 
         <!-- Javascript Files
   ================================================== -->
-        <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
-            AOS.init();
-        </script> -->
+            window.addEventListener('load', () => {
+                AOS.init();
+            });
+        </script>
         <!-- initialize jQuery Library -->
         <script src="plugins/jQuery/jquery.min.js"></script>
         <!-- Bootstrap jQuery -->

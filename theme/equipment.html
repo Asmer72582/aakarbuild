@@ -35,7 +35,7 @@
   <link rel="stylesheet" href="plugins/colorbox/colorbox.css">
   <!-- Template styles-->
   <link rel="stylesheet" href="css/style.css">
-  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -410,6 +410,7 @@
 
     <!-- Javascript Files
   ================================================== -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- initialize jQuery Library -->
     <script src="plugins/jQuery/jquery.min.js"></script>
@@ -423,7 +424,11 @@
     <!-- shuffle -->
     <script src="plugins/shuffle/shuffle.min.js" defer></script>
 
-
+    <script>
+      window.addEventListener('load', () => {
+        AOS.init();
+      });
+    </script>
     <!-- Google Map API Key-->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU" defer></script>
     <!-- Google Map Plugin-->
